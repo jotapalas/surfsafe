@@ -35,7 +35,7 @@
 	<hr>Introduce tu <strong>número de teléfono</strong> aquí debajo para que nuestro departamento de marketing se ponga en contacto contigo:<br>
 	<input type="text" placeholder="Tu número de teléfono"></br>
 
-	<table class="respuestas"><tr><td>
+	<table><tr><td>
 	<button type="button" onclick="answer('1', 0)" />
 	</td><td>Reclamar mi premio.</td></tr>
 	<tr><td><button type="button" onclick="answer('1', 100)" />

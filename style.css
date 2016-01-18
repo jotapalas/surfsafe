@@ -4,16 +4,42 @@ body{
 }
 
 .pregunta, .error, #score, .correcto{
-	position:fixed;
 	visibility:hidden;
 	margin:auto;
 	width:800px;
-	max-height:500px;
-	padding-top:20px;
+	height:80%;
 	z-index: 1;
 	clear:both;
-	overflow-y: scroll;
-	padding-bottom:50px;
+	padding-bottom:80px;
+	left:50%;
+	top:40%;
+	position: absolute;
+    margin: -15% 0 0 -25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
 }
 
 .pregunta h1, .error h1, .correcto h1{
@@ -30,15 +56,18 @@ body{
 	font-family:"Helvetica","Calibri", fantasy;
 }
 
-
+#score {
+	text-align: center;
+}
 #header{
 	background-color:#0B0B3B; 
 	min-width: 100%;
 	border-bottom: 2px solid white;
 	position: fixed;
     top: 0;
-    z-index: 2;
+    z-index:2;
     min-height:20px;
+    float:none;
 }
 
 #login{
@@ -55,24 +84,20 @@ body{
 #login a{color:white;}
 
 #game-container {
-	min-height:650px;
-	max-width:800px;
+	clear:both;
+	position:absolute;
+	float:middle;
+	width:100%;
+	height:80%;
 	margin:auto;
-	margin-bottom:20px;
+	top:10%;
+	z-index:1;
+	overflow: hidden;
 }
 
 #post-header{
 	clear:both;
 	margin-bottom:50px;
-}
-
-#score{
-	position:relative;
-	text-align:center;
-	padding-top:60px;
-	margin-top:90px;
-	min-height:0;
-	padding:10px;
 }
 
 #marcador{
@@ -159,20 +184,133 @@ body{
 	border:0;background:url("./img/game/next-hover.png") no-repeat 0 0;
 	cursor:hand;
 }
+@media screen and (max-device-width: 768px) {
+	body {
+		font-size:24pt;
+	}
+	.error, .correcto, .pregunta {
+		font-size:24pt;
+	}
 
-@media screen and (max-height: 768px){
+	.pregunta table td{
+		font-size:24pt;
+	}
+
+
+	.error a{
+		visibility:hidden;
+	}
+	.correcto a{
+		visibility:hidden;
+	}
+
+	.pregunta button {
+		border:0;
+		background:url("./img/game/answer1.png") no-repeat;
+		width: 60px;
+		height: 60px;
+	}
+
+	#header{
+		visibility: hidden;
+	}
+	#game-container{
+		top:0;
+		left:0;
+		margin:auto;
+		position:relative;
+		height:100%;
+		width:100%;
+		overflow:scroll;
+	}
 	.pregunta, .error, #score, .correcto{
-		max-height: 400px;
+		height:100%;
+		width:100%;
+		top:0;
+		left:0;
+		position:absolute;
+		margin:auto;
+		overflow:scroll;
+		margin:auto;
+	}
+	::-webkit-scrollbar {
+    -webkit-appearance: none;
+	}
+
+	::-webkit-scrollbar:vertical {
+	    width: 12px;
+	}
+
+	::-webkit-scrollbar:horizontal {
+	    height: 12px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	    background-color: rgba(0, 0, 0, .5);
+	    border-radius: 10px;
+	    border: 2px solid #ffffff;
+	}
+
+	::-webkit-scrollbar-track {
+	    border-radius: 10px;  
+	    background-color: #ffffff; 
+	}
+	#footer{
+		visibility: hidden;
 	}
 }
-@media screen and (max-height: 600px){
-	.pregunta, .error, #score, .correcto{
-		max-height: 250px;
-	}
-}
 
-@media screen and (max-width: 768px){
-	.pregunta, .error, #score, .correcto{
-		max-width: 100%px;
+@media screen and (max-width: 768px) {
+	body {
+		font-size:20pt;
 	}
+
+	#header{
+		visibility: hidden;
+	}
+	#game-container{
+		top:0;
+		left:0;
+		margin:auto;
+		position:relative;
+		height:100%;
+		width:100%;
+		overflow:scroll;
+	}
+	.pregunta, .error, #score, .correcto{
+		height:100%;
+		width:100%;
+		top:0;
+		left:0;
+		position:absolute;
+		margin:auto;
+		overflow:scroll;
+		margin:auto;
+	}
+	::-webkit-scrollbar {
+    -webkit-appearance: none;
+	}
+
+	::-webkit-scrollbar:vertical {
+	    width: 12px;
+	}
+
+	::-webkit-scrollbar:horizontal {
+	    height: 12px;
+	}
+
+	::-webkit-scrollbar-thumb {
+	    background-color: rgba(0, 0, 0, .5);
+	    border-radius: 10px;
+	    border: 2px solid #ffffff;
+	}
+
+	::-webkit-scrollbar-track {
+	    border-radius: 10px;  
+	    background-color: #ffffff; 
+	}
+	#footer{
+		visibility: hidden;
+	}
+
 }

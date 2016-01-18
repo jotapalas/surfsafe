@@ -1,7 +1,7 @@
 <?php
 	include ('./includes/header.php');
 ?>
-
+	<div id="game-container">
 		<div id="score" style="visibility:visible">
 				Hemos llegado al final.<br>
 				Has obtenido una <strong>puntuación</strong> de:<hr>
@@ -46,6 +46,7 @@
 				?>
 
 		</div>
+	</div>
 	<?php
 	include('./includes/footer.php');
 ?>
