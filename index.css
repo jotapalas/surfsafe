@@ -1,0 +1,140 @@
+body{
+	margin:auto;
+	font-size: 10px;
+	font-family: "Arial", "Helvetica", fantasy;
+}
+
+a{
+	color: black;
+	font-weight: bold;
+}
+
+strong{
+	color:#0B0B3B;
+}
+
+#container{
+	z-index:2;
+	float:center;
+	margin:auto;
+}
+
+#header{
+	background-color:#0B0B3B; 
+	border-bottom: 2px solid white;
+	position:fixed;
+	top:0;
+	min-width: 100%;
+	min-height:20px;
+	z-index:5;
+}
+
+#login{
+	padding-right:10px;
+	text-align: right;
+	padding-top:15px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	background-color:#0B0B3B;
+	max-width:900px;
+	margin:auto;
+}
+
+
+#table-index{
+	width:900px;
+	margin:auto;
+	padding-top:0px;
+	margin-top: 30px;
+}
+
+#table-index td{
+	width:450px;
+	padding-top:0px;
+	margin-top:0px;
+	z-index:2;
+}
+
+#register{
+	min-width: 450px;
+	border-radius: 25px;
+    border: 2px solid #0B0B3B;
+    padding: 10px; 
+    width: 200px;
+    text-align:justify;
+    padding-top:2px;
+    padding-bottom:0px;
+    background-color: white;
+    margin-top:5px;
+}
+
+#register input[type="submit"] {
+	border:0;background:url("./img/login/submit.gif") no-repeat 0 0;
+	width: 199px;
+	height: 66px;
+}
+#register input[type="submit"]:hover {
+	background:url("./img/login/submit-hover.gif") no-repeat 0 0;
+	cursor: hand;
+}
+
+#register hr{clear:both; color:#0B0B3B; border-size:1px;}
+
+#register h2{
+	margin-bottom:5px;
+	margin-top:5px;
+	text-align: center;
+}
+
+#start_game img{
+	margin-top:30px;
+}
+
+#start_game img:hover{
+	margin-top:35px;
+	opacity: 0.4;  /*Opacidad al pasar el raton*/
+	-webkit-transition-property: opacity; 
+	-webkit-transition-duration: 300ms;
+}
+
+#footer {
+	visibility: hidden;
+	padding-right:10px;
+	text-align: center;
+	color: white;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin-top:10px;
+	background-color:#0B0B3B;
+	background-color:#0B0B3B;
+	min-height:30px;
+	min-width: 100%;
+	z-index:5;
+}
+
+#footer a{
+	color: white;
+}
+
+#footer table{
+	max-width:900px;
+	color: white;
+	margin:auto;
+    border-collapse: separate;
+}
+
+/* GENERICA */
+a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#0B0B3B;
+}
+a:hover{color:#6161a2;}
+#footer a:hover{color:#acace7;}
+#footer a{color:white;}
+
+img.dashed{
+	border-width: 2px;
+	border-color: #0B0B3B;
+	border-style: dashed;
+}

@@ -1,0 +1,178 @@
+body{
+	font-family:"Calibri", "Arial", fantasy;
+	font-size:14pt;
+}
+
+.pregunta, .error, #score, .correcto{
+	position:fixed;
+	visibility:hidden;
+	margin:auto;
+	width:800px;
+	max-height:500px;
+	padding-top:20px;
+	z-index: 1;
+	clear:both;
+	overflow-y: scroll;
+	padding-bottom:50px;
+}
+
+.pregunta h1, .error h1, .correcto h1{
+	background-color:#BDBDBD;
+	text-align:center;
+	font-size:20pt;
+	font-family:"Helvetica","Calibri", fantasy;
+}
+
+.pregunta h2, .error h2, .correcto h2{
+	background-color:#BDBDBD;
+	text-align:center;
+	font-size:20pt;
+	font-family:"Helvetica","Calibri", fantasy;
+}
+
+
+#header{
+	background-color:#0B0B3B; 
+	min-width: 100%;
+	border-bottom: 2px solid white;
+	position: fixed;
+    top: 0;
+    z-index: 2;
+    min-height:20px;
+}
+
+#login{
+	padding-right:10px;
+	text-align: right;
+	padding-top:15px;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	background-color:#0B0B3B;
+	max-width:900px;
+	margin:auto;
+	color: white;
+}
+#login a{color:white;}
+
+#game-container {
+	min-height:650px;
+	max-width:800px;
+	margin:auto;
+	margin-bottom:20px;
+}
+
+#post-header{
+	clear:both;
+	margin-bottom:50px;
+}
+
+#score{
+	position:relative;
+	text-align:center;
+	padding-top:60px;
+	margin-top:90px;
+	min-height:0;
+	padding:10px;
+}
+
+#marcador{
+    font-size:18pt;
+    height:50px;
+    width:200px;
+    font-family: "Helvetica", "Arial", fantasy;
+    text-align:center;
+}
+
+#footer {
+	padding-right:10px;
+	text-align: center;
+	color: white;
+	padding-top:15px;
+	padding-bottom:10px;
+	margin-top:10px;
+	background-color:#0B0B3B;
+	background-color:#0B0B3B;
+	height:50px;
+	min-width:100%;
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+#footer a{
+	color: white;
+}
+
+#footer table{
+	max-width:900px;
+	color: white;
+	margin:auto;
+    border-collapse: separate;
+}
+
+#footer h2{
+	margin-bottom:10px;
+	font-size:14pt;
+}
+
+#register input[type="submit"] {
+	border:0;background:url("./img/login/submit.gif") no-repeat 0 0;
+	width: 199px;
+	height: 66px;
+}
+#register input[type="submit"]:hover {
+	background:url("./img/login/submit-hover.gif") no-repeat 0 0;
+	cursor:hand;
+}
+
+.pregunta button {
+	border:0;background:url("./img/game/answer1.png") no-repeat 0 0;
+	width: 30px;
+	height: 30px;
+}
+
+.pregunta button:hover {
+	background:url("./img/game/answer2.png") no-repeat 0 0;
+	cursor: hand;
+}
+
+.error button{
+	border:0;background:url("./img/game/next.png") no-repeat 0 0;
+	width: 150px;
+	height: 45px;
+}
+
+.correcto button{
+	border:0;background:url("./img/game/next.png") no-repeat 0 0;
+	width: 150px;
+	height: 45px;
+}
+
+.correcto button:hover{
+	border:0;background:url("./img/game/next-hover.png") no-repeat 0 0;
+	cursor:hand;
+}
+
+.error button:hover{
+	border:0;background:url("./img/game/next-hover.png") no-repeat 0 0;
+	cursor:hand;
+}
+
+@media screen and (max-height: 768px){
+	.pregunta, .error, #score, .correcto{
+		max-height: 400px;
+	}
+}
+@media screen and (max-height: 600px){
+	.pregunta, .error, #score, .correcto{
+		max-height: 250px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.pregunta, .error, #score, .correcto{
+		max-width: 100%px;
+	}
+}
